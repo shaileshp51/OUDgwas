@@ -12,3 +12,7 @@ This repository is dedicated to host the in-house scripts developed and used for
 | qc       | Quality control                         |
 | mscvo    | Most severe consequence variant only    |
 
+# Tools 
+* PLINK
+* EMMA
+* VEP (using an .sif )

@@ -7,8 +7,8 @@ This repository is dedicated to host the in-house scripts developed and used for
 | -------- | --------------------------------------- |
 | js       | Joint calling                           |
 | ss       | Selected samples only                   |
-| qs       | Quality control                         |
-| gs       |   Genes selected only                   |
+| gs       | Genes selected only                     |
 | vep      | Variant effect predictor output         |
+| qc       | Quality control                         |
 | mscvo    | Most severe consequence variant only    |
 

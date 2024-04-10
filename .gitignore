@@ -1,9 +1,7 @@
 # Ignore output files
 *.out
 *.csv
-*.png
 *.dat
-*.txt
 
 # Ignore big input files
 *.vcf

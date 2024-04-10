@@ -1,0 +1,5 @@
+CSQ=([A-Z\-]*)\|stop_gained
+CSQ=([A-Z\-]*)\|inframe_insertion
+CSQ=([A-Z\-]*)\|inframe_deletion
+CSQ=([A-Z\-]*)\|missense_variant
+CSQ=([A-Z\-]*)\|protein_altering_variant

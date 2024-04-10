@@ -1,0 +1,12 @@
+ CHR  SNP         BP   A1      C_A      C_U   A2        CHISQ            P           OR 
+   1    .   28812463    G        5        4    T       0.2929       0.5884       0.6579 
+   3    .  114171968    C       10        8    T       0.4675       0.4941        0.625 
+   4    .   41013882    C        7        5    T      0.05844        0.809         0.84 
+   6    .  154039662    G        1        3    A        2.469       0.1161       0.1746 
+   6    .  154093311    A        6        3    T       0.1558        0.693        1.375 
+  11    .   17772388 GCCACCGAGGCATTCACCCCGGCTGAGCAGGCGCCGAGCCTCGGATCCTGCAACCCCGCCCTGGACGGTGCCCTCAATGCTTTTGAACCGGCAGGCTGGGAGCCGTTCCCCCTGGATGGCAGCGAAGTGC        1        1    G         0.11       0.7401        0.619 
+  11    .   27658369    T        5        1    C        1.496       0.2213        3.824 
+  11    .  113412760 GACCACC        2        0    G        1.348       0.2457           NA 
+  14    .   78243701    A        6        3    G       0.1558        0.693        1.375 
+  15    .   93045059    A        3        1    G       0.3653       0.5456        2.053 
+  18    .   79863691 GGGC        8        5    G     0.001564       0.9685        1.029 

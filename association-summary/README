@@ -1,0 +1,4 @@
+Table 2, is compiled with specified raw p-value cutoff value from file: combined.jc.gs.vep_allvars.qc_assoc-adj.csv
+Table 3, is compiled with specified raw p-value cutoff value from file: gwas-mscvo-annot-var-impact-named-gene-p-value-lt-0.05.tsv
+         Note after analysis on can fid a file named annot-var-impact-named-gene-p-value-lt-0.05.tsv inside genome-wide-association kept here for easy access
+Table 4, is compiled with specified raw p-value cutoff value from file: gwas-mscvo-annot-var-impact-aggr-by-gene-weighted-with-genename-p-value-lt-0.05.tsv

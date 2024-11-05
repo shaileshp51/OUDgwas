@@ -6,13 +6,34 @@ This repository is dedicated to host the in-house scripts developed and used for
 | ABVR     | Detail                                  |
 | -------- | --------------------------------------- |
 | js       | Joint calling                           |
-| ss       | Selected samples only                   |
 | gs       | Genes selected only                     |
 | vep      | Variant effect predictor output         |
 | qc       | Quality control                         |
 | mscvo    | Most severe consequence variant only    |
 
-# Tools 
+# Let's install singularity to enable use of tools available as sigularity-image 
+## My OS is Ubuntu 24.04 (LTS)
+First of all I added the singularity repository using
+wget -O- http://neuro.debian.net/lists/noble.us-tn.libre | sudo tee /etc/apt/sources.list.d/neurodebian.sources.list
+sudo apt-key adv --recv-keys --keyserver hkps://keyserver.ubuntu.com 0xA5D32F012649A5A9
+
+follow the instructions
+sudo apt update
+
+after completion use
+sudo apt install singularity
+
+It installed singularity version 4.1.1, you can check your's using
+singularity version
+
+
+# Required Tools
 * PLINK
-* EMMA
-* VEP (using an .sif )
+* VEP (using an .sif)
+I followed the instructions provided at link below
+https://useast.ensembl.org/info/docs/tools/vep/script/vep_download.html#singularity
+to get the vep.sif, install and then setup the cache for homo_sapiens reference genome assembly GRCh38
+We used $PROJECTDIR/tools for vep_data instead of $HOME provided in the instrctions. Where PROJECTDIR is the 
+main-folder of this project.
+
+* samtools (bcftools)

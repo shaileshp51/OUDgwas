@@ -1,2 +1,0 @@
-chr	rs	ps	n_miss	allele1	allele0	af	logl_H1	l_mle	p_lrt
-1	.	28812463	0	T	G	0.763	-1.301415e+01	1.000000e-05	6.643409e-01

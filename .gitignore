@@ -7,9 +7,13 @@
 *.vcf
 *.vcf.gz
 
+tools/vep_data
 # softwares
 *.sif
 
+# ignore large-files
+large-files/
+ 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,5 +1,0 @@
-*.nextflow*
-*.ini
-work/
-outdir/
-singularity-images/

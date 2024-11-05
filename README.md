@@ -42,8 +42,9 @@ main-folder of this project.
 
 * samtools (bcftools) v1.20
 
-# Large-files can not be uploaded to GitHub rather made available from groups website
-Dowload large file from http://compbio.clemson.edu/media/download/large-files.zip
+# Large-files from groups website
+Large files including variant calling file (.vcf) and raw STRING databse PPIs file and completely normalized PPIs file, and also singularity images of the vep and samtools are made available. These files can not be uploaded to GitHub rather made available from groups webpage.
+Download large file from http://compbio.clemson.edu/media/download/large-files.zip
 Unzip and copy the folders inside unzipped folder to the folders with same name in OUDgwas folder
 
 # Workflow

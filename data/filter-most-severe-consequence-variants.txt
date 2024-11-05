@@ -1,0 +1,15 @@
+CSQ=([A-Z\-]*)\|stop_gained
+CSQ=([A-Z\-]*)\|inframe_insertion
+CSQ=([A-Z\-]*)\|inframe_deletion
+CSQ=([A-Z\-]*)\|missense_variant
+CSQ=([A-Z\-]*)\|protein_altering_variant
+CSQ=([A-Z\-]*)\|transcript_ablation
+CSQ=([A-Z\-]*)\|splice_acceptor_variant
+CSQ=([A-Z\-]*)\|splice_donor_variant
+CSQ=([A-Z\-]*)\|stop_gained
+CSQ=([A-Z\-]*)\|frameshift_variant
+CSQ=([A-Z\-]*)\|stop_lost
+CSQ=([A-Z\-]*)\|start_lost
+CSQ=([A-Z\-]*)\|transcript_amplification
+CSQ=([A-Z\-]*)\|feature_elongation
+CSQ=([A-Z\-]*)\|feature_truncation

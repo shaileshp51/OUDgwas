@@ -64,6 +64,7 @@ E3 --> F3(setp 3.5: select GOIs for subnetwork<br>with Cytoscape)
 F3 --> G3(step 3.6: extend subnet: <br>also include <br>immideate neighbors of GOIs<br> with Cytoscape)
 G3 --> I3(step 3.7: further extend subnet:<br> also include nodes with<br> two or more neighbors in selected nodes<br>with Cytoscape)
 I3 --> J3(step 3.8: cluster subnet into <br> connected components <br> with Cytoscape)
+```
 J3 --> K3(setp 3.9: select genes <br>in largest compnent:<br>say extended-GOIs<br> with Cytoscape)
 K3 --> L3(step 3.10: gProfile: functional enrichment analysis)
 L3 --> M3(step 3.11: report hightly enriched<br> terms relevant to OUD) 

@@ -10,6 +10,7 @@ This repository is dedicated to host the in-house scripts developed and used for
 | vep      | Variant effect predictor output         |
 | qc       | Quality control                         |
 | mscvo    | Most severe consequence variant only    |
+| OUD      | Opioid Use Disorder                     |
 
 # Let's install singularity to enable use of tools available as sigularity-image 
 ## We used Ubuntu 24.04 (LTS)
@@ -48,3 +49,55 @@ Unzip and copy the folders inside unzipped folder to the folders with same name 
 # Workflow
 ![Workflow](./image/oud-gwas-workflow.png)
 
+# Case-control association for variants with coding consequence on reported 12 genes.
+* The 12 genes that are already reported in literature to harbor variants associated to OUD are listed in `data/reported-12-genes.txt` and corresponding variants filtered from the all variants are saved in folder `only-reported-12-gene` and all related association analysis results are contained in it.
+
+Covered steps: 1.1 to 1.4.1.
+
+To run this analysis use:
+```
+bash only-reported-12-genes-mscvo-analysis.bash
+```
+We did not found any variant with significance from this analaysis.
+
+# Case-control association for all variants on reported 12 genes (including intronic).
+Covers steps &amp; 1.5.1 shown in workflow and all results are stored in `only-reported-12-gene`.
+
+To run this analysis use:
+```
+bash only-reported-12-genes-all-varinats-analysis.bash
+```
+Based on raw p-value < 0.05 we found some varinats, though upon multiple hypothesis testing none of the variants reached significance. Which is due to very small sample size used here. We considered variants only based on raw p-value in this step.
+The final varinats list after association alalysis is also kept in `association-results` folder.
+
+# Variant effect prediction of all variants, filtering of *mscvo* variants, and case-control association
+All the related files will be created in the folder `genome-wide-association`.
+Covers steps: 2.1 to 2.6
+Final association results is also kept in `association-results` folder for easy access and comparison to what one gets after running the script.
+
+To run this analysis use:
+```
+bash genome-wide-mscvo-analysis.bash
+```
+
+running this script completely may take several hours on normal WorkStations.
+
+# Co-occurance analysis
+Covers steps: 2.7 &amp; 2.7.1
+The co-occurance analysis is performed using the python code provided in the notebook
+install all the dependencies in a dedicated conda-environment before running the code.
+
+Use jupyter-lab to see and run the code contained in the notebook `GWAS-py-v01.ipynb`
+Final association results is also kept in `association-results` folder.
+
+
+# PPIs network analysis
+Covers steps 3.1 to 3.4
+Preprocessing of the PPIs in dbSTRING, normalization and maping gene_ids to gene_names is also done.
+Use jupyter-lab to see and run the code contained in the notebook `GWAS-py-v01.ipynb`
+
+# Network of Genes-of-Interest PPIs construction and analysis.
+The PPIs network is constructed and all the relevant data and Cytoscape session is saved in folder `PPI-net`.
+
+# Enrichment query and results
+Function enrichment query and results are proved in the folder `enrichemnt-results`.

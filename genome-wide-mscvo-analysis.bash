@@ -18,17 +18,17 @@ bcftools="singularity exec $PROJDIR/tools/samtools-1.20.sif bcftools"
 
 SUBSET="genome-wide-association"
 
-<<'STEP1'
+#<<'STEP1'
 $bcftools view $PROJDIR/data/combined.jc.vcf.gz -q 0.05:minor -Oz -o $PROJDIR/$SUBSET/combined.jc.vcf
-STEP1
+#STEP1
 
 vcfprefix="combined.jc"
-<<'STEP2'
+#<<'STEP2'
 # Predict the effects of variants using Ensemble Variant Effect Predictor
 singularity exec $PROJDIR/tools/vep.sif vep --fork 16 --dir $PROJDIR/tools/vep_data \
     --max_af -i $PROJDIR/$SUBSET/${vcfprefix}.vcf --format vcf \
     --force_overwrite -o $PROJDIR/$SUBSET/${vcfprefix}.vep.vcf --vcf --cache
-STEP2
+#STEP2
 
 
 # Lets filter only most-severe-consequence-variants, see consequence-list to filter in filter-variants.txt

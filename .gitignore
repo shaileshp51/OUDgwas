@@ -1,6 +1,5 @@
 # Ignore output files
 *.out
-*.csv
 *.dat
 
 # Ignore big input files

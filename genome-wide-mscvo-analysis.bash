@@ -6,7 +6,7 @@ source ~/.bash_aliases
 #source activate /opt/skp/anaconda3/envs/py311_genomics
 
 
-# How to query SNP in dabase
+# How to query SNP in database
 # ((14[Chromosome]) AND 79404467[Base Position]) 
 GENE_EXTENSION=5000
 

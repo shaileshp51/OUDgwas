@@ -97,4 +97,4 @@ Use jupyter-lab to see and run the code contained in the notebook `GWAS-py-v01.i
 The PPIs network is constructed and all the relevant data and Cytoscape session is saved in folder `PPI-net`.
 
 # Enrichment query and results
-Function enrichment query and results are proved in the folder `enrichemnt-results`.
+Function enrichment query and results are provided in the folder `enrichemnt-results`.
